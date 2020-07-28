@@ -5,7 +5,7 @@ function Footer() {
   return (
     <FooterBase>
       <Autor>
-        &copy; Gustavo Matheus Morinaga Cardoso
+        &copy; 2020 | Gustavo Matheus Morinaga Cardoso
       </Autor>
       <hr style={{margin: "0 5%"}}/>
       <p>
