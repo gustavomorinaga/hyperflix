@@ -56,10 +56,6 @@
     display: inline-block;
     transition: opacity .3s;
   }
-  .ButtonLink:hover,
-  .ButtonLink:focus {
-    opacity: .5;
-  }
   
   @media (max-width: 800px) {
     a.ButtonLink {
@@ -71,5 +67,10 @@
       border-radius: 0;
       border: 0;
       text-align: center;
+      transition: background .3s;
+    }
+
+    a.ButtonLink:hover, a.ButtonLink:focus {
+      background: #b0141f;
     }
   }

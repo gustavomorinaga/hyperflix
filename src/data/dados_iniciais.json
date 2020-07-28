@@ -1,0 +1,125 @@
+{
+  "categorias": [
+    {
+      "titulo": "Games",
+      "link": "https://www.alura.com.br/formacao-front-end",
+      "cor": "rgb(197 54 54)",
+      "link_extra": {
+        "text": "Análises, Gameplays e Curiosidades"
+      },
+      "videos": [
+        {
+          "titulo": "GHOST OF TSUSHIMA : VALE OU NÃO A PENA JOGAR!?",
+          "url": "https://www.youtube.com/watch?v=vUfjoQR_Phg"
+        },
+        {
+          "titulo": "CARRION - JOGO COMPLETO em PORTUGUÊS PT-BR",
+          "url": "https://www.youtube.com/watch?v=0080gTe5QN4"
+        },
+        {
+          "titulo": "o dark souls das reviews de jogos",
+          "url": "https://www.youtube.com/watch?v=u89XfBFd4Mw"
+        },
+        {
+          "titulo": "Os Chefes mais INJUSTOS e APELÕES dos Jogos ²!",
+          "url": "https://www.youtube.com/watch?v=89MGVQLChEk&list=LLd0pBMAUWBB7VDv5vK3S1rg&index=18&t=0s"
+        },
+        {
+          "titulo": "5 GAMES EM QUE A ARMA INICIAL É A MELHOR ARMA DO JOGO!",
+          "url": "https://www.youtube.com/watch?v=yGSqqYS4bYk&list=LLd0pBMAUWBB7VDv5vK3S1rg&index=35"
+        },
+        {
+          "titulo": "EXPLICANDO COMO O MAIOR MISTÉRIO DO MINECRAFT FOI RESOLVIDO...",
+          "url": "https://www.youtube.com/watch?v=LYgUH6jZsIc&list=LLd0pBMAUWBB7VDv5vK3S1rg&index=64"
+        },
+        {
+          "titulo": "COMO SERIA UM JOGO EM SEGUNDA PESSOA?",
+          "url": "https://www.youtube.com/watch?v=JAGm06omb_M&list=LLd0pBMAUWBB7VDv5vK3S1rg&index=119"
+        },
+        {
+          "titulo": "RECRIANDO MINEIRINHO SÓ QUE 1000X MELHOR!",
+          "url": "https://www.youtube.com/watch?v=mEIstYBiLUo"
+        }        
+      ]
+    },
+    {
+      "titulo": "Dev",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Conceitos, Técnicas e Novidades de Programação Web"
+      },
+      "videos": [
+        {
+          "titulo": "Programadores Altamente Eficazes: 7 Hábitos",
+          "url": "https://www.youtube.com/watch?v=cJx0k_ln1-g&list=PLt57TgA24uShu8GUqM6JJlhTeVk602Ahf&index=5&t=0s"
+        },
+        {
+          "titulo": "Photoshop para VÍDEOS? Esse algoritmo é incrível!",
+          "url": "https://www.youtube.com/watch?v=EpWvKHSWDms&list=PLt57TgA24uShu8GUqM6JJlhTeVk602Ahf&index=12"
+        },
+        {
+          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
+          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+        },
+        {
+          "titulo": "Como fazer um SITE RÁPIDO com GITHUB PAGES? | Handshake #4",
+          "url": "https://www.youtube.com/watch?v=5B4bHSiOOO8&list=PLt57TgA24uShu8GUqM6JJlhTeVk602Ahf&index=8"
+        }, 
+        {
+          "titulo": "JSON // Dicionário do Programador",
+          "url": "https://www.youtube.com/watch?v=P81dE-tkaaA"
+        }
+      ]
+    },
+    {
+      "titulo": "Música",
+      "cor": "rgb(64, 59, 211)",
+      "link_extra": {
+        "text": "Metal, 8-Bit e Synthwave"
+      },
+      "videos": [
+        {
+          "titulo": "25 HEADBANGING RIFFS",
+          "url": "https://www.youtube.com/watch?v=cb1kX1RNc4k"
+        },
+        {
+          "titulo": "Beat It (metal cover by Leo Moracchioli)",
+          "url": "https://www.youtube.com/watch?v=EN6nLcix45U"
+        },
+        {
+          "titulo": "The Floppotron: Doom E1M1 - At Doom's Gate",
+          "url": "https://www.youtube.com/watch?v=GNTtR6ZpUOo"
+        },
+        {
+          "titulo": "Singularity (Synthwave - Retrowave - Chillwave Mix)",
+          "url": "https://www.youtube.com/watch?v=BfCgF10C58Q&t=117s"
+        }
+      ]
+    },
+    {
+      "titulo": "Filmes",
+      "cor": "#ff7800",
+      "link_extra": {
+        "text": "Clássicos do Cinema Pop"
+      },
+      "videos": [
+        {
+          "titulo": "Batman: O Cavaleiro das Trevas",
+          "url": "https://www.youtube.com/watch?v=EXeTwQWrcwY"
+        },
+        {
+          "titulo": "Homem-Aranha 2 (2004)",
+          "url": "https://www.youtube.com/watch?v=8pSRBdt6ico"
+        },
+        {
+          "titulo": "Watchmen",
+          "url": "https://www.youtube.com/watch?v=NUjMO_k9IF8"
+        },
+        {
+          "titulo": "Matrix",
+          "url": "https://www.youtube.com/watch?v=D4eJx-0g3Do"
+        }
+      ]
+    }
+  ]
+}

@@ -23,4 +23,8 @@ html, body {
 
 a {
   color: inherit;
-} 
+}
+
+.back {
+  background: #141414;
+}
