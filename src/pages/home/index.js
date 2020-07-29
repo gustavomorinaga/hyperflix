@@ -1,13 +1,18 @@
-import React from 'react';
-import Menu from './components/Menu';
-import BannerMain from './components/BannerMain';
-import Carousel from './components/Carousel';
-import Footer from './components/Footer';
-import dadosIniciais from './data/dados_iniciais.json'
+import React from 'react'
+import styled from 'styled-components'
+import Menu from '../../components/Menu'
+import BannerMain from '../../components/BannerMain'
+import Carousel from '../../components/Carousel'
+import Footer from '../../components/Footer'
+import dadosIniciais from '../../data/dados_iniciais.json'
 
-function App() {
+const AppWrapper = styled.div`
+  background: var(--grayDark);
+`
+
+function Home() {
   return (
-    <div className="back">
+    <AppWrapper>
       <Menu/>
       <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
@@ -28,8 +33,8 @@ function App() {
         category={dadosIniciais.categorias[3]}
       />
       <Footer/>
-    </div>
-  );
+    </AppWrapper>
+  )
 }
 
-export default App;
+export default Home

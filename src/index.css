@@ -11,6 +11,7 @@
   --blackLighter: #9E9E9E;
   --grayLight: #F5F5F5;
   --grayMedium: #e5e5e5; 
+  --grayDark: #141414;
   --white: #FFFFFF;
   --frontEnd: #6BD1FF;
   --backEnd: #00C86F;
@@ -25,6 +26,8 @@ a {
   color: inherit;
 }
 
-.back {
-  background: #141414;
+#root {
+  min-height: calc(100vh - var(--bodyPaddingTop));
+  display: flex;
+  flex-direction: column;
 }

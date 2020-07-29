@@ -13,6 +13,12 @@ const Button = styled.button`
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
+    transition: text-shadow, transform .3s;
+
+    &:hover, &:focus {
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.75);
+        transform: scale(1.05);
+    }
 `;
 
 export default Button;
