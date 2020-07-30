@@ -29,17 +29,20 @@ const CadastroCategoria = () => {
         margin: 0;
         margin-left: 1rem;
         display: inline;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
         transition: color .3s ease;
     `;
 
   useEffect(() => {
-    const url = 'https://hyperflix.herokuapp.com/categorias';
+    const url = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias' : 'https://hyperflix.herokuapp.com/categorias';
     fetch(url).then(async (res) => {
       const resposta = await res.json();
       setCategorias([
         ...resposta,
       ]);
-      console.log(resposta);
     });
   }, []);
 
