@@ -33,7 +33,7 @@ const CadastroCategoria = () => {
     `;
 
   useEffect(() => {
-    const url = 'http://localhost:8080/categorias';
+    const url = 'https://hyperflix.herokuapp.com/categorias';
     fetch(url).then(async (res) => {
       const resposta = await res.json();
       setCategorias([
