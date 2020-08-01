@@ -2,6 +2,21 @@ import React from 'react';
 import SlickSlider from 'react-slick';
 import styled from 'styled-components';
 
+const SliderSettings = {
+  dots: false,
+  infinite: true,
+  speed: 300,
+  centerMode: true,
+  variableWidth: true,
+  adaptiveHeight: true,
+  responsive: [{
+    breakpoint: 800,
+    settings: {
+      className: "center"
+    }
+  }]
+}
+
 const Container = styled.ul`
   padding: 0;
   margin: 0;
@@ -12,7 +27,7 @@ const Container = styled.ul`
     bottom: 0;
     margin: auto;
     width: 30px;
-    height: 30px;
+    height: 100%;
     transform: initial;
     &:before {
       font-size: 30px;
@@ -21,38 +36,47 @@ const Container = styled.ul`
   
   .slick-prev {
     left: 0;
+    background: linear-gradient(to left, transparent 0%, rgba(0,0,0,0.75) 100%);
+    padding-right: 10%;
+    padding-left: 5%;
   }
   .slick-next {
     right: 0;
+    background: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.75) 100%);
+    padding-right: 7.5%;
+    padding-left: 6%;
+  }
+
+  @media (max-width: 800px) {
+    .slick-next {
+      padding-right: 12%;
+      padding-left: 4%;
+    }
+
+    .slick-slide a {
+      transform: scale(1);
+    }
+
+    .slick-center a {
+      transform: scale(1.05);
+      filter: grayscale(0);
   }
 `;
 
 export const SliderItem = styled.li`
   margin: 14px;
-  transition: transform .3s;
+  width: 0%;
   img {
     margin: 16px;
     width: 298px;
     height: 197px;
     object-fit: cover;
   }
-
-  &:hover, &:focus {
-    transform: scale(1.05);
-  }
 `;
 
 const Slider = ({ children }) => (
   <Container>
-    <SlickSlider {...{
-      dots: false,
-      infinite: true,
-      speed: 300,
-      centerMode: false,
-      variableWidth: true,
-      adaptiveHeight: true,
-    }}
-    >
+    <SlickSlider {...SliderSettings}>
       {children}
     </SlickSlider>
   </Container>

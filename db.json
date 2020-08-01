@@ -2,43 +2,34 @@
   "categorias": [
     {
       "id": 1,
-      "nome": "Front End",
-      "cor": "#6BD1FF",
+      "nome": "Games",
+      "cor": "rgb(197 54 54)",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Análises, Gameplays e Curiosidades"
       }
     },
     {
       "id": 2,
-      "nome": "Back End",
+      "nome": "Dev",
       "cor": "#00C86F",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
+        "text": "Conceitos, Técnicas e Novidades de Programação Web"
       }
     },
     {
       "id": 3,
-      "nome": "Data Science e Inteligência Artificial",
-      "cor": "#9cd33b",
+      "nome": "Música",
+      "cor": "rgb(64, 59, 211)",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/cursos-online-mobile"
+        "text": "Metal, 8-Bit e Synthwave"
       }
     },
     {
       "id": 4,
       "nome": "Filmes",
-      "cor": "orange"
-    },
-    {
-      "id": 5,
-      "nome": "Games",
-      "cor": "red",
+      "cor": "#ff7800",
       "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Clássicos do Cinema Pop"
       }
     }
   ],
@@ -46,146 +37,146 @@
     {
       "id": 1,
       "categoriaId": 1,
-      "nome": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "nome": "GHOST OF TSUSHIMA : VALE OU NÃO A PENA JOGAR!?",
+      "url": "https://www.youtube.com/watch?v=vUfjoQR_Phg",
+      "descricao": "História + Análise Completa + Informações Nerds Extras."
     },
     {
       "id": 2,
       "categoriaId": 1,
-      "nome": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+      "nome": "CARRION - JOGO COMPLETO em PORTUGUÊS PT-BR",
+      "url": "https://www.youtube.com/watch?v=0080gTe5QN4"
     },
     {
       "id": 3,
       "categoriaId": 1,
-      "nome": "Componentização com VanillaJS #AluraMais",
-      "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+      "nome": "o dark souls das reviews de jogos",
+      "url": "https://www.youtube.com/watch?v=u89XfBFd4Mw"
     },
     {
       "id": 4,
       "categoriaId": 1,
-      "nome": "Pare de chutar e aprenda a display: inline #01",
-      "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+      "nome": "Os Chefes mais INJUSTOS e APELÕES dos Jogos ²!",
+      "url": "https://www.youtube.com/watch?v=89MGVQLChEk"
     },
     {
       "id": 5,
       "categoriaId": 1,
-      "nome": "Template String: Interpolando strings com JavaScript #AluraMais",
-      "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+      "nome": "5 GAMES EM QUE A ARMA INICIAL É A MELHOR ARMA DO JOGO!",
+      "url": "https://www.youtube.com/watch?v=yGSqqYS4bYk"
     },
     {
       "id": 6,
       "categoriaId": 1,
-      "nome": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-      "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+      "nome": "EXPLICANDO COMO O MAIOR MISTÉRIO DO MINECRAFT FOI RESOLVIDO...",
+      "url": "https://www.youtube.com/watch?v=LYgUH6jZsIc"
     },
     {
       "id": 7,
       "categoriaId": 1,
-      "nome": "Novidades do Angular v9",
-      "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+      "nome": "COMO SERIA UM JOGO EM SEGUNDA PESSOA?",
+      "url": "https://www.youtube.com/watch?v=JAGm06omb_M"
     },
     {
       "id": 8,
-      "categoriaId": 2,
-      "nome": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-      "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+      "categoriaId": 1,
+      "nome": "RECRIANDO MINEIRINHO SÓ QUE 1000X MELHOR!",
+      "url": "https://www.youtube.com/watch?v=mEIstYBiLUo"
     },
     {
       "id": 9,
       "categoriaId": 2,
-      "nome": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-      "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+      "nome": "Programadores Altamente Eficazes: 7 Hábitos",
+      "url": "https://www.youtube.com/watch?v=cJx0k_ln1-g"
     },
     {
       "id": 10,
+      "categoriaId": 2,
+      "nome": "Photoshop para VÍDEOS? Esse algoritmo é incrível!",
+      "url": "https://www.youtube.com/watch?v=EpWvKHSWDms"
+    },
+    {
+      "id": 11,
       "categoriaId": 2,
       "nome": "Programei 4 robôs que criam vídeos para mim no YouTube",
       "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
     },
     {
-      "id": 11,
-      "categoriaId": 2,
-      "nome": "API: Dicionário do Programador",
-      "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
-    },
-    {
       "id": 12,
       "categoriaId": 2,
-      "nome": "Usando Git Direito",
-      "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+      "nome": "Como fazer um SITE RÁPIDO com GITHUB PAGES? | Handshake #4",
+      "url": "https://www.youtube.com/watch?v=5B4bHSiOOO8"
     },
     {
       "id": 13,
-      "categoriaId": 3,
-      "nome": "Teste de Turing",
-      "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+      "categoriaId": 2,
+      "nome": "JSON // Dicionário do Programador",
+      "url": "https://www.youtube.com/watch?v=P81dE-tkaaA"
     },
     {
       "id": 14,
       "categoriaId": 3,
-      "nome": "O que é Data Science?",
-      "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+      "nome": "25 HEADBANGING RIFFS",
+      "url": "https://www.youtube.com/watch?v=cb1kX1RNc4k"
     },
     {
       "id": 15,
       "categoriaId": 3,
-      "nome": "Melhor forma de aprender Python",
-      "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+      "nome": "Beat It (metal cover by Leo Moracchioli)",
+      "url": "https://www.youtube.com/watch?v=EN6nLcix45U"
     },
     {
       "id": 16,
       "categoriaId": 3,
-      "nome": "Como ingressar no mercado de Data Science?",
-      "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+      "nome:": "Doom 3 Theme | Guitar Cover",
+      "url": "https://www.youtube.com/watch?v=6B7Frm-m6YU"
     },
     {
       "id": 17,
-      "categoriaId": 4,
-      "nome": "Interestellar",
-      "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+      "categoriaId": 3,
+      "nome:": "Singularity (Synthwave - Retrowave - Chillwave Mix)",
+      "url": "https://www.youtube.com/watch?v=BfCgF10C58Q&t=117s"
     },
     {
       "id": 18,
-      "categoriaId": 4,
-      "nome": "Gattaca",
-      "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+      "categoriaId": 3,
+      "nome:": "The Floppotron: Doom E1M1 - At Doom's Gate",
+      "url": "https://www.youtube.com/watch?v=GNTtR6ZpUOo"
     },
     {
       "id": 19,
       "categoriaId": 4,
-      "nome": "A Chegada",
-      "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+      "nome": "Batman: O Cavaleiro das Trevas",
+      "url": "https://www.youtube.com/watch?v=EXeTwQWrcwY"
     },
     {
       "id": 20,
       "categoriaId": 4,
-      "nome": "Feitiço do Tempo",
-      "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+      "nome": "Homem-Aranha 2 (2004)",
+      "url": "https://www.youtube.com/watch?v=8pSRBdt6ico"
     },
     {
       "id": 21,
-      "categoriaId": 5,
-      "nome": "Final Fantasy 7",
-      "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+      "categoriaId": 4,
+      "nome": "Watchmen",
+      "url": "https://www.youtube.com/watch?v=NUjMO_k9IF8"
     },
     {
       "id": 22,
-      "categoriaId": 5,
-      "nome": "Assassins Creed Valhalla",
-      "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+      "categoriaId": 4,
+      "nome": "Matrix",
+      "url": "https://www.youtube.com/watch?v=D4eJx-0g3Do"
     },
     {
-      "id": 23,
-      "categoriaId": 5,
-      "nome": "God of War 4",
-      "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+      "nome": "Vazou TUDO do NOVO evento do PS5",
+      "url": "https://www.youtube.com/watch?v=Jwgm9hOo8zI",
+      "id": 23
     },
     {
-      "id": 24,
-      "categoriaId": 5,
-      "nome": "Resident Evil 8",
-      "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+      "nome": "Vazou TUDO do NOVO evento do PS5",
+      "url": "https://www.youtube.com/watch?v=Jwgm9hOo8zI",
+      "categoriaId": 1,
+      "id": 24
     }
   ]
 }

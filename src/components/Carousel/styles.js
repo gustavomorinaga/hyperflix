@@ -1,16 +1,17 @@
 import styled from 'styled-components';
 
 export const Title = styled.h3`
+  background: red;
+  border-radius: 4px;
+  display: inline-block;
   font-style: normal;
   font-weight: normal;
   font-size: 35px;
   line-height: 1;
   margin-bottom: 16px;
-  display: inline-block;
+  margin-left: 5%;
   padding: 20px;
-  background: red;
   line-height: 1;
-  border-radius: 4px;
 
   @media (max-width: 800px) {
     font-size: 18px;
@@ -25,14 +26,12 @@ export const ExtraLink = styled.a`
   @media (max-width: 800px) {
     display: block;
     margin-bottom: 16px;
-    margin-left: 0;
+    margin-left: 5%;
   }
 `;
 
 export const VideoCardGroupContainer = styled.section`
   color: white;
   min-height: 197px;
-  margin-left: 5%;
-  margin-right: 5%;
   margin-bottom: 16px;
 `;

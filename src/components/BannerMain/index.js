@@ -19,9 +19,9 @@ export default function BannerMain({
   const bgUrl = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
 
   return (
-    <BannerMainContainer backgroundImage={bgUrl}>
+    <BannerMainContainer backgroundImage={bgUrl} data-os="zoom-in">
       <ContentAreaContainer>
-        <ContentAreaContainer.Item>
+        <ContentAreaContainer.Item data-aos="fade-up">
           <ContentAreaContainer.Title>
             {videoTitle}
           </ContentAreaContainer.Title>
@@ -31,7 +31,7 @@ export default function BannerMain({
           </ContentAreaContainer.Description>
         </ContentAreaContainer.Item>
 
-        <ContentAreaContainer.Item>
+        <ContentAreaContainer.Item data-aos="fade-up">
           <VideoIframeResponsive
             youtubeID={youTubeID}
           />

@@ -7,12 +7,12 @@ function Carousel({
   ignoreFirstVideo,
   category,
 }) {
-  const categoryTitle = category.titulo
+  const categoryTitle = category.nome
   const categoryColor = category.cor
   const categoryExtraLink = category.link_extra
   const videos = category.videos
   return (
-    <VideoCardGroupContainer>
+    <VideoCardGroupContainer data-aos="zoom-out-up">
       {categoryTitle && (
         <>
           <Title style={{ backgroundColor: categoryColor || 'red' }}>
@@ -32,9 +32,9 @@ function Carousel({
           }
 
           return (
-            <SliderItem key={video.titulo}>
+            <SliderItem key={video.nome}>
               <VideoCard
-                videoTitle={video.titulo}
+                videoTitle={video.nome}
                 videoURL={video.url}
                 categoryColor={categoryColor}
               />

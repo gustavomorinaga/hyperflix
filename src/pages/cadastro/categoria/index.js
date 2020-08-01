@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm'
 
 const CadastroCategoria = () => {
   const valoresIniciais = {
@@ -12,17 +13,9 @@ const CadastroCategoria = () => {
     cor: '#ffffff',
   };
 
+  const { handleChange, clearForm, values } = useForm(valoresIniciais)
+
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
-
-  const setValue = (chave, valor) => {
-    setValues({
-      ...values,
-      [chave]: valor,
-    });
-  };
-
-  const handleChange = (e) => setValue(e.target.getAttribute('name'), e.target.value);
 
   const CategoriaCor = styled.code`
         color: ${values.cor};
@@ -56,11 +49,11 @@ const CadastroCategoria = () => {
         e.preventDefault();
         setCategorias([...categorias, values]);
 
-        setValues(valoresIniciais);
+        clearForm(valoresIniciais);
       }}
       >
-        <FormField tag="input" label="Nome da Categoria" type="text" name="nome" value={values.nome} onChange={handleChange} placeholder="Digite a Categoria" />
-        <FormField tag="textarea" label="Descrição" type="text" name="descricao" value={values.descricao} onChange={handleChange} placeholder="Digite a Descrição" />
+        <FormField tag="input" label="Nome da Categoria" type="text" name="nome" value={values.nome} onChange={handleChange}/>
+        <FormField tag="textarea" label="Descrição" type="text" name="descricao" value={values.descricao} onChange={handleChange}/>
         <FormField tag="input" label="Cor" type="color" name="cor" value={values.cor} onChange={handleChange} />
         <Button>
           Cadastrar
