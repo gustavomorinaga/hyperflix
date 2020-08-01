@@ -1,34 +1,51 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PageDefault from '../../../components/PageDefault';
 import { Link, useHistory } from 'react-router-dom';
 import useForm from '../../../hooks/useForm';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import videosRepository from '../../../repositories/videos';
+import categoriasRepository from '../../../repositories/categorias';
 
 const CadastroVideo = () => {
     const history = useHistory();
+    const [categorias, setCategorias] = useState([]);
+    const categoryTitles = categorias.map(({ nome }) => nome);
     const { handleChange, values } = useForm({
-        nome: 'Vazou TUDO do NOVO evento do PS5',
-        url: 'https://www.youtube.com/watch?v=Jwgm9hOo8zI',
-        categoria: '1'
+        nome: '',
+        url: '',
+        categoria: ''
     });
+
+    useEffect(() => {
+        categoriasRepository.getAll().then((categoriasFromServer) => {
+            setCategorias(categoriasFromServer);
+        })
+    }, []);
+
     return (
         <PageDefault>
             <h1>Cadastro de Vídeos</h1>
             <form onSubmit={(e) => {
                 e.preventDefault();
+
+                const categoriaEscolhida = categorias.find((categoria) => {
+                    return categoria.nome === values.categoria;
+                });
+
                 videosRepository.create({
                     nome: values.nome,
                     url: values.url,
-                    categoriaId: 1,
+                    categoriaId: categoriaEscolhida.id,
                 }).then(() => {
                     history.push('/');
                 });
             }}>
                 <FormField tag="input" label="Título do Vídeo" type="text" name="nome" value={values.nome} onChange={handleChange}/>
                 <FormField tag="input" label="URL do Vídeo" type="text" name="url" value={values.url} onChange={handleChange}/>
-                <FormField tag="input" label="URL do Vídeo" type="text" name="categoria" value={values.categoria} onChange={handleChange}/>
+                <FormField tag="input" label="Categoria" type="text" name="categoria" value={values.categoria} onChange={handleChange}
+                    suggestions={categoryTitles}
+                />
                 <Button>
                     Cadastrar
                 </Button>
@@ -40,4 +57,4 @@ const CadastroVideo = () => {
     )
 }
 
-export default CadastroVideo
+export default CadastroVideo;
