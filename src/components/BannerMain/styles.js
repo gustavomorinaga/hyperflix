@@ -45,6 +45,11 @@ border-radius: 4px;
 `;
 
 ContentAreaContainer.Description = styled.p`
+  margin-right: 5%;
+  padding-top: 10px;
+  border-top: 2px solid transparent;
+  border-image: linear-gradient(90deg, transparent 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, transparent 100%);
+  border-image-slice: 1;
 @media (max-width: 800px) {
   display: none;
 }
@@ -56,8 +61,8 @@ font-weight: 400;
 font-size: 40px;
 line-height: 1;
 margin-top: 0;
-margin-bottom: 32px;
-padding-right: 5%;
+margin-bottom: 0;
+margin-right: 5%;
 text-shadow: 0px 0px 10px #FFFFFFB0;
 
 @media (max-width: 800px) {

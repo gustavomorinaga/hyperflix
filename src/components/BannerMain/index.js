@@ -19,7 +19,7 @@ export default function BannerMain({
   const bgUrl = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
 
   return (
-    <BannerMainContainer backgroundImage={bgUrl} data-os="zoom-in">
+    <BannerMainContainer backgroundImage={bgUrl}>
       <ContentAreaContainer>
         <ContentAreaContainer.Item data-aos="fade-up">
           <ContentAreaContainer.Title>

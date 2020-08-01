@@ -60,6 +60,21 @@ const Container = styled.ul`
     .slick-center a {
       transform: scale(1.05);
       filter: grayscale(0);
+    }
+
+    .slick-slide:not(.slick-center) a:hover {
+      filter: grayscale(50%);
+    }
+
+    .slick-slide:not(.slick-center) a:hover div {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+
+    .slick-center a div {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
   }
 `;
 
