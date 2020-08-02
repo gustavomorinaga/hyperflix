@@ -31,7 +31,39 @@ const Container = styled.ul`
     transform: initial;
     &:before {
       font-size: 30px;
+      box-shadow: 0px 0px 10px black;
     }
+    &::before {
+      color: ${({ bgColor }) => `${bgColor}`};
+    }
+    &::before, &::after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      content: "";
+      background-color: rgb(255, 255, 255);
+      display: block;
+      height: 3rem;
+      width: 1rem;
+      opacity: 1;
+      border-radius: 0.25rem;
+    }
+  }
+
+  .slick-next::before {
+    transform: translate(-50%, -75%) rotate(-45deg);
+  }
+
+  .slick-next::after {
+    transform: translate(-50%, -25%) rotate(45deg);
+  }
+
+  .slick-prev::before {
+    transform: translate(-50%, -75%) rotate(45deg);
+  }
+
+  .slick-prev::after {
+    transform: translate(-50%, -25%) rotate(-45deg);
   }
   
   .slick-prev {

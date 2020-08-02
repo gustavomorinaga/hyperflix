@@ -33,5 +33,7 @@ export const ExtraLink = styled.a`
 export const VideoCardGroupContainer = styled.section`
   color: white;
   min-height: 197px;
-  margin-bottom: 16px;
+  &:nth-of-type(odd) {
+    background: var(--gray);
+  }
 `;
