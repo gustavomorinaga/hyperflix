@@ -78,7 +78,7 @@ color: #fff;
 background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
 background-size: cover;
 background-position: center;
-background-attachment: scroll;
+background-attachment: fixed;
 background-repeat: no-repeat;
 animation: fadeInAnimation ease 3s;
 animation-iteration-count: 1;

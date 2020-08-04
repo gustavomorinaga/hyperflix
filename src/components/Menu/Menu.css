@@ -24,6 +24,19 @@
     padding-right: 5%;
     transition: all .15s;
   }
+
+  .Menu-normal {
+    background: var(--black);
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(45deg, #dc511a 0%, var(--primary) 25%, var(--primary) 50%, purple 100%);
+    border-image-slice: 1;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .Menu div a {
+    margin-left: 10px;
+  }
+
   .navbar-scrolled {
     background: var(--black);
     border-bottom: 2px solid transparent;
@@ -63,6 +76,14 @@
   }
   
   @media (max-width: 800px) {
+    .Video {
+      margin-left: 0px !important;
+    }
+
+    .Category {
+      display: none !important;
+    }
+
     a.ButtonLink {
       position: fixed;
       left: 0;

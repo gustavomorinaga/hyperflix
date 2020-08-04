@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PageDefault from '../../../components/PageDefault';
+import PageDefault, { handleScroll } from '../../../components/PageDefault';
 import { Link, useHistory } from 'react-router-dom';
 import useForm from '../../../hooks/useForm';
 import FormField from '../../../components/FormField';
@@ -23,6 +23,8 @@ const CadastroVideo = () => {
         })
 
         document.body.style.paddingTop = "var(--bodyPaddingTop)";
+
+        document.addEventListener('scroll', handleScroll)
     }, []);
 
     return (
@@ -52,9 +54,6 @@ const CadastroVideo = () => {
                     Cadastrar
                 </Button>
             </form>
-            <Link to="/cadastro/categoria">
-                Cadastrar Categoria
-            </Link>
         </PageDefault>
     )
 }

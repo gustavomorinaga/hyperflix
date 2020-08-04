@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PageDefault from '../../components/PageDefault';
+import PageDefault, { handleScroll } from '../../components/PageDefault';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 import categoriasRepository from '../../repositories/categorias';
@@ -14,13 +14,14 @@ function Home() {
         setDadosIniciais(categoriasComVideos);
 
         document.body.style.paddingTop = "0px";
+        document.addEventListener('scroll', handleScroll);
 
       }).catch((err) => console.log(err.message));
   }, []);
 
   return (
     <PageDefault paddingAll={0}>
-      {dadosIniciais.length === 0 && ( <Loading/> )} 
+      {dadosIniciais.length === 0 && ( <Loading/> )}
 
       {dadosIniciais.map((categoria, indice) => {
         if (indice === 0) {

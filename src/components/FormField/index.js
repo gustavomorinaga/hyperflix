@@ -126,7 +126,7 @@ FormField.propTypes = {
   label: PropTypes.string.isRequired,
   type: PropTypes.string,
   name: PropTypes.string.isRequired,
-  value: PropTypes.string,
+  value: PropTypes.string.isRequired,
   onChange: PropTypes.func,
   suggestions: PropTypes.arrayOf(PropTypes.string),
 };

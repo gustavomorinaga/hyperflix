@@ -14,7 +14,7 @@ const Main = styled.main`
     `}
 `;
 
-const handleScroll = () => {
+export const handleScroll = () => {
   const show = window.scrollY > 50;
 
   if (show) {
@@ -23,8 +23,6 @@ const handleScroll = () => {
     document.querySelector('nav').classList.remove('navbar-scrolled');
   }
 }
-
-document.addEventListener('scroll', handleScroll);
 
 const PageDefault = ({ children, paddingAll }) => (
   <>

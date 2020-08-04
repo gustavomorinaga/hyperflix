@@ -9,13 +9,15 @@
   --primary: #dc1a28;
   --black: #000000;
   --blackLighter: #9E9E9E;
+  --gray: #262626;
   --grayLight: #F5F5F5;
   --grayMedium: #e5e5e5; 
   --grayDark: #141414;
+  --grayTransparent: #4b4b4b7a;
+  --grayDarken: #1b1b1b;
   --white: #FFFFFF;
   --frontEnd: #6BD1FF;
   --backEnd: #00C86F;
-  --gray: #262626;
 }
 
 html, body {

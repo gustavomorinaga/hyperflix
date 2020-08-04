@@ -4,33 +4,25 @@
       "id": 1,
       "nome": "Games",
       "cor": "rgb(197 54 54)",
-      "link_extra": {
-        "text": "Análises, Gameplays e Curiosidades"
-      }
+      "descricao": "Análises, Gameplays e Curiosidades"
     },
     {
       "id": 2,
       "nome": "Dev",
       "cor": "#00C86F",
-      "link_extra": {
-        "text": "Conceitos, Técnicas e Novidades de Programação Web"
-      }
+      "descricao": "Conceitos, Técnicas e Novidades de Programação Web"
     },
     {
       "id": 3,
       "nome": "Música",
       "cor": "rgb(64, 59, 211)",
-      "link_extra": {
-        "text": "Metal, 8-Bit e Synthwave"
-      }
+      "descricao": "Metal, 8-Bit e Synthwave"
     },
     {
       "id": 4,
       "nome": "Filmes",
       "cor": "#ff7800",
-      "link_extra": {
-        "text": "Clássicos do Cinema Pop"
-      }
+      "descricao": "Clássicos do Cinema Pop"
     }
   ],
   "videos": [

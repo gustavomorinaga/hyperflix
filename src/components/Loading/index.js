@@ -21,6 +21,7 @@ const Load = styled.div`
 `
 
 const LoadingSpinner = styled.div`
+    z-index: 150;
     position: relative;
     display: flex;
     width: 100%;

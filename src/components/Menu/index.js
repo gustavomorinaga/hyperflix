@@ -10,11 +10,16 @@ function Menu() {
             <Link to="/">
                 <img className="Logo" src={Logo} alt="Logotipo HyperFlix"/>
             </Link>
-            <Button as={Link} className="ButtonLink" to="/cadastro/video">
-                Novo Vídeo
-            </Button>
+            <div>
+                <Button as={Link} className="ButtonLink Video" to="/cadastro/video">
+                    Novo Vídeo
+                </Button>
+                <Button as={Link} className="ButtonLink Category" to="/cadastro/categoria">
+                    Nova Categoria
+                </Button>
+            </div>
         </nav>
     )
 }
 
-export default Menu
+export default Menu;
