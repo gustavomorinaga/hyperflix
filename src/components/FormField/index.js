@@ -8,7 +8,10 @@ const FormFieldWrapper = styled.div`
     min-height: 150px;
   }
   input[type="color"] {
-    padding-left: 56px;
+    padding: 0px 16px;
+    padding-right: 0px;
+    padding-left: 65px;
+    border: medium none;
   }
 `;
 
@@ -46,7 +49,7 @@ const Input = styled.input`
   border-bottom: 4px solid #53585D;
   
   padding: 16px 16px;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
   
   resize: none;
   border-radius: 4px;

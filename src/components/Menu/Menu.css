@@ -22,7 +22,9 @@
     right: 0;
     padding-left: 5%;
     padding-right: 5%;
-  
+    transition: all .15s;
+  }
+  .navbar-scrolled {
     background: var(--black);
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(45deg, #dc511a 0%, var(--primary) 25%, var(--primary) 50%, purple 100%);

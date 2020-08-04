@@ -14,6 +14,18 @@ const Main = styled.main`
     `}
 `;
 
+const handleScroll = () => {
+  const show = window.scrollY > 50;
+
+  if (show) {
+    document.querySelector('nav').classList.add('navbar-scrolled');
+  } else {
+    document.querySelector('nav').classList.remove('navbar-scrolled');
+  }
+}
+
+document.addEventListener('scroll', handleScroll);
+
 const PageDefault = ({ children, paddingAll }) => (
   <>
     <Menu />

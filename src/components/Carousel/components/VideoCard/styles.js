@@ -22,9 +22,7 @@ export const VideoCardContainer = styled.a`
   background-image: ${({ url }) => `url(${url})`};
   background-size: cover;
   background-position: center;
-  border: 2px solid;
-  border-color: ${({ ItemColor }) => `${ItemColor}`};
-  border-radius: 10px;
+  border-radius: 4px;
   color: white;
   cursor: pointer;
   display: flex;
@@ -41,9 +39,10 @@ export const VideoCardContainer = styled.a`
   
   &:hover,
   &:focus {
-    transform: scale(1.05);
+    box-shadow: ${({ ItemColor }) => `0px 0px 10px ${ItemColor}`};
     filter: grayscale(0);
-    box-shadow: ${({ ItemColor }) => `0px 0px 8px ${ItemColor}`};
+    transform: scale(1.2);
+    z-index: 150;
   }
   
   &:not(:first-child) {

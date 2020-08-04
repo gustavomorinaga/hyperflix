@@ -3,6 +3,7 @@ import PageDefault from '../../components/PageDefault';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 import categoriasRepository from '../../repositories/categorias';
+import Loading from '../../components/Loading';
 
 function Home() {
   const [dadosIniciais, setDadosIniciais] = useState([]);
@@ -11,12 +12,15 @@ function Home() {
     categoriasRepository.getAllWithVideos()
       .then((categoriasComVideos) => {
         setDadosIniciais(categoriasComVideos);
+
+        document.body.style.paddingTop = "0px";
+
       }).catch((err) => console.log(err.message));
   }, []);
 
   return (
     <PageDefault paddingAll={0}>
-      {dadosIniciais.length === 0 && ( <div> Carregando... </div> )} 
+      {dadosIniciais.length === 0 && ( <Loading/> )} 
 
       {dadosIniciais.map((categoria, indice) => {
         if (indice === 0) {

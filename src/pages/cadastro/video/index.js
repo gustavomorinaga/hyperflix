@@ -21,6 +21,8 @@ const CadastroVideo = () => {
         categoriasRepository.getAll().then((categoriasFromServer) => {
             setCategorias(categoriasFromServer);
         })
+
+        document.body.style.paddingTop = "var(--bodyPaddingTop)";
     }, []);
 
     return (

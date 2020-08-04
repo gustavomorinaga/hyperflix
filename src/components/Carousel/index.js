@@ -12,15 +12,15 @@ function Carousel({
   const categoryExtraLink = category.link_extra
   const videos = category.videos
   return (
-    <VideoCardGroupContainer data-aos="zoom-out-up">
+    <VideoCardGroupContainer>
       {categoryTitle && (
         <>
-          <Title style={{ backgroundColor: categoryColor || 'red' }}>
+          <Title bgColor={categoryColor} data-aos="zoom-out">
             {categoryTitle}
           </Title>
           {categoryExtraLink && 
-            <ExtraLink>
-              {categoryExtraLink.text}  
+            <ExtraLink data-aos="zoom-out">
+              {categoryExtraLink.text}
             </ExtraLink>
           }
         </>
@@ -32,7 +32,7 @@ function Carousel({
           }
 
           return (
-            <SliderItem key={video.nome}>
+            <SliderItem key={video.nome} className="item">
               <VideoCard
                 videoTitle={video.nome}
                 videoURL={video.url}

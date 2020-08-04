@@ -20,6 +20,7 @@ const SliderSettings = {
 const Container = styled.ul`
   padding: 0;
   margin: 0;
+
   .slick-prev,
   .slick-next {
     z-index: 50;
@@ -27,11 +28,12 @@ const Container = styled.ul`
     bottom: 0;
     margin: auto;
     width: 30px;
-    height: 100%;
+    height: 75%;
     transform: initial;
+    transition: all .3s;
     &:before {
       font-size: 30px;
-      box-shadow: 0px 0px 10px black;
+      box-shadow: 0px 0px 15px black;
     }
     &::before {
       color: ${({ bgColor }) => `${bgColor}`};
@@ -43,10 +45,16 @@ const Container = styled.ul`
       content: "";
       background-color: rgb(255, 255, 255);
       display: block;
-      height: 3rem;
-      width: 1rem;
+      height: 2rem;
+      width: 0.75rem;
       opacity: 1;
       border-radius: 0.25rem;
+      transition: all 0.3s;
+    }
+
+    &:hover::after, &:hover::before {
+      height: 2.15rem;
+      width: 0.8rem;
     }
   }
 
@@ -68,20 +76,37 @@ const Container = styled.ul`
   
   .slick-prev {
     left: 0;
-    background: linear-gradient(to left, transparent 0%, rgba(0,0,0,0.75) 100%);
+    background: linear-gradient(to left, transparent 0%, rgb(0,0,0,0.8) 100%);
+    opacity: .8;
     padding-right: 10%;
     padding-left: 5%;
   }
   .slick-next {
     right: 0;
-    background: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.75) 100%);
+    background: linear-gradient(to right, transparent 0%, rgb(0,0,0,0.85) 100%);
+    opacity: .8;
     padding-right: 7.5%;
     padding-left: 6%;
   }
 
+  .slick-prev:hover {
+    background: linear-gradient(to left, transparent 0%, rgba(0,0,0,0.9) 100%);
+    opacity: 1;
+  }
+
+  .slick-next:hover {
+    background: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.9) 100%);
+    opacity: 1;
+  }
+
   @media (max-width: 800px) {
+    .slick-prev {
+      padding-right: 10%;
+      padding-left: 1%;
+    }
+
     .slick-next {
-      padding-right: 12%;
+      padding-right: 7.5%;
       padding-left: 4%;
     }
 
@@ -111,8 +136,10 @@ const Container = styled.ul`
 `;
 
 export const SliderItem = styled.li`
-  margin: 14px;
+  margin: 0 8px;
+  padding: 2rem 0;
   width: 0%;
+  transition: all .3s;
   img {
     margin: 16px;
     width: 298px;
@@ -122,7 +149,7 @@ export const SliderItem = styled.li`
 `;
 
 const Slider = ({ children }) => (
-  <Container>
+  <Container data-aos="zoom-out">
     <SlickSlider {...SliderSettings}>
       {children}
     </SlickSlider>

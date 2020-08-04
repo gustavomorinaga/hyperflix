@@ -72,12 +72,12 @@ text-shadow: 0px 0px 10px #FFFFFFB0;
 `;
 
 export const BannerMainContainer = styled.section`
-height: 85vh;
+height: 100vh;
 position: relative;
 color: #fff;
 background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
 background-size: cover;
-background-position: top;
+background-position: center;
 background-attachment: scroll;
 background-repeat: no-repeat;
 animation: fadeInAnimation ease 3s;
